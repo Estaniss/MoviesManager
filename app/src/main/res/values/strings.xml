@@ -1,12 +1,22 @@
-<resources>
-    <string name="app_name">MoviesManager</string>
-    <string name="name">Nome</string>
-    <string name="year">Ano</string>
-    <string name="studio">Estúdio</string>
-    <string name="time">Duração</string>
-    <string name="isSee">Visto</string>
-    <string name="grade">Nota</string>
-    <string name="genre">Gênero</string>
-    <string name="fab_button_description">Add Item</string>
-    <string name="save">Salvar</string>
-</resources>
+    <resources>
+        <string name="app_name">MoviesManager</string>
+        <string name="name">Nome</string>
+        <string name="year">Ano</string>
+        <string name="studio">Estúdio</string>
+        <string name="time">Duração</string>
+        <string name="isSee">Visto</string>
+        <string name="grade">Nota</string>
+        <string name="genre">Gênero</string>
+        <string name="fab_button_description">Add Item</string>
+        <string name="save">Salvar</string>
+        <string-array name="genreSpinner">
+            <item>Drama</item>
+            <item>Comédia</item>
+            <item>Ação</item>
+            <item>Suspense</item>
+            <item>Romance</item>
+            <item>Terror</item>
+            <item>Aventura</item>
+            <item>Animação</item>
+        </string-array>
+    </resources>

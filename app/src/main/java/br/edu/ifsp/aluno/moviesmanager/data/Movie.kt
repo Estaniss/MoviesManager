@@ -13,6 +13,6 @@ class Movie (
     val time:String,
     val isSee: Boolean,
     val grade:Int,
-    val genre:String
+    val genre:String = "aaaa"
 )
 

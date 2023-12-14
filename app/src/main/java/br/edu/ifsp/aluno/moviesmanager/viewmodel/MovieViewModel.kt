@@ -13,10 +13,12 @@ import kotlinx.coroutines.launch
 class MovieViewModel(application: Application):AndroidViewModel(application) {
     private val repository:MovieRepository
     lateinit var movie:LiveData<Movie>
+    var allMovies:LiveData<List<Movie>>
 
     init {
         val dao = MovieDatabase.getDatabase(application).movieDAO()
         repository= MovieRepository(dao)
+        allMovies = repository.getAllMovies()
     }
     fun insert(movie: Movie)= viewModelScope.launch(Dispatchers.IO){
     repository.insert(movie)
