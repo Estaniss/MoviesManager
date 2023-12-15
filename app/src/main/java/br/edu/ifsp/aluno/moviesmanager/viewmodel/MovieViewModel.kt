@@ -23,4 +23,17 @@ class MovieViewModel(application: Application):AndroidViewModel(application) {
     fun insert(movie: Movie)= viewModelScope.launch(Dispatchers.IO){
     repository.insert(movie)
     }
+
+    fun update(movie: Movie) = viewModelScope.launch(Dispatchers.IO){
+        repository.update(movie)
+    }
+
+    fun delete(movie: Movie) = viewModelScope.launch(Dispatchers.IO){
+        repository.delete(movie)
+    }
+    fun getMovieById(id:Int){
+        viewModelScope.launch {
+            movie=repository.getMovieById(id)
+        }
+    }
 }

@@ -7,12 +7,12 @@ import androidx.room.PrimaryKey
 class Movie (
     @PrimaryKey(autoGenerate = true)
     val id:Int,
-    val name:String,
-    val year:String,
-    val studio:String,
-    val time:String,
-    val isSee: Boolean,
-    val grade:Int,
-    val genre:String = "aaaa"
+    var name:String,
+    var year:String,
+    var studio:String,
+    var time:String,
+    var isSee: Boolean,
+    var grade:Int,
+    var genre:String,
 )
 
